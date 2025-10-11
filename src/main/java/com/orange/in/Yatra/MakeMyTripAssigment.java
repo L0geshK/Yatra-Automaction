@@ -106,15 +106,6 @@ public class MakeMyTripAssigment {
 		System.out.println("//div[contains(text()," + TargetMonth + " " + TargetYear
 				+ ")]/ancestor::div[@class=\"DayPicker-Month\"]");
 
-//		By CalendarmonthLocator = By.xpath("//div[contains(text(),'"+TargetMonth+" "+TargetYear+"')]/ancestor::div[@class=\"DayPicker-Month\"]");
-//		WebElement Calendarmonth = wait.until(ExpectedConditions.visibilityOfElementLocated(CalendarmonthLocator));
-//	
-//	//p[contains(text(),"+targetDate+")]/ancestor::div[contains(@class,\"DayPicker-Day\")]
-//	System.out.println("//p[contains(text(),"+targetDate+")]/ancestor::div[contains(@class,\\\"DayPicker-Day\\\")]");
-//		By CalendarDaysLocator = By.xpath(".//p[contains(text(),'"+targetDate+"')]/ancestor::div[contains(@class,\"DayPicker-Day\")]");
-//	WebElement day= Calendarmonth.findElement(CalendarDaysLocator);
-//		day.click();
-
 		By CalendarmonthLocator = By.xpath("//div[contains(text(),'" + TargetMonth + " " + TargetYear
 				+ "')]/ancestor::div[@class='DayPicker-Month']");
 		WebElement Calendarmonth = wait.until(ExpectedConditions.visibilityOfElementLocated(CalendarmonthLocator));
